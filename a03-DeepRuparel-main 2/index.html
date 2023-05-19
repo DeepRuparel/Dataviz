@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="d3.js"></script>
+    <script src="cars.js"></script>
+    <style>
+      #assignment3 {
+        text-align: center;
+      }
+      #pcplot {
+        padding-left: 150px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="assignment3">
+      <h1>Assignment 3</h1>
+    </div>
+    <div id = "written questions">
+      <h4>Question 1</h4>
+      <p>
+        The first task is if we would like to compare two dimensions of data and if they are not next to each other it would be really difficult for us to do so, so we could use the 
+        first interaction which is mouse click which will allow us to get the dimensions next to each other, and then we can compare them.
+        </br>
+        The second interaction is mouse hover on a particular point, which will allow us to update the color scale of the plot depending on the value of the dimension we are hovering on.
+        By doing so, we can quickly get a sense of how the values for that dimension are distributed across the dataset.
+        </br>
+        The third interaction is brushing which selects a subset of data which fall under the selection of the brush and if more than one brush is present the subset of data is the intersection of the brushes.
+        We would do so because it allows us to explore the data and discover patterns in the data. We can also easily highlight the outliers or focus only on a specific subset of data.
+      </p>
+      <h4>Question 2</h4>
+      <p>
+        The design principle while choosing the color scale used is that since we are color coding parallel coordinates, which is essentially made up of thin line, we use more saturated colors. 
+        This allows us to create a contrast since we are using thin lines and we want to make sure that the colors are easily distinguishable and, it also emphasizes their importance and helps draw attention to them. 
+      </p>
+      <h4>Question 3</h4>
+      <p>
+        One advantage of parallel coordinates is that it allows us to have multiple dimensions to be represented on a single plot, whereas scatterplot matrices require a separate plot for each pairwise combination of variables. 
+        This makes parallel coordinates more space-efficient and easier to interpret when dealing with datasets with a large number of variables.
+        </br>
+        Parallel coordinates when drawn using large volumes of data can clutter up and be difficult to interpret. On the otherhand, scatterplot matrices can handle large volumes of data by breaking them into 
+        small and easily interpretatable sub-plots.
+      </p>
+     </div>
+    <div id="pcplot"></div>
+    <script src="a03.js"></script>
+  </body>
+</html>

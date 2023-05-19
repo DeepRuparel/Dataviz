@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="d3.js"></script>
+    <script src="svg.js"></script>
+    <script src="scores.js"></script>
+    <title>CSC 544 Assignment 01</title>
+  </head>
+
+  <body>
+    <div id="div1">
+      <svg width="500" height="500" style="border: 1px solid black">
+        <circle cx="260.6060606060606" cy="215" r="5" fill="red"></circle>
+        <circle cx="339.39393939393943" cy="275" r="5" fill="red"></circle>
+        <circle cx="242.42424242424244" cy="285" r="5" fill="red"></circle>
+        <circle cx="248.4848484848485" cy="225" r="5" fill="red"></circle>
+        <circle cx="260.6060606060606" cy="220" r="5" fill="red"></circle>
+        <circle cx="260.6060606060606" cy="265" r="5" fill="red"></circle>
+        <circle cx="266.6666666666667" cy="225" r="5" fill="red"></circle>
+        <circle cx="333.33333333333337" cy="245" r="5" fill="red"></circle>
+        <circle cx="345.4545454545455" cy="290" r="5" fill="red"></circle>
+        <circle cx="224.24242424242425" cy="210" r="5" fill="red"></circle>
+        <line x1="30" y1="450" x2="450" y2="450" stroke="black"></line>
+        <line x1="50" y1="450" x2="50" y2="50" stroke="black"></line>
+        <line x1="50" y1="450" x2="50" y2="460" stroke="black"></line>
+        <line x1="100" y1="450" x2="100" y2="460" stroke="black"></line>
+        <line x1="150" y1="450" x2="150" y2="460" stroke="black"></line>
+        <line x1="200" y1="450" x2="200" y2="460" stroke="black"></line>
+        <line x1="250" y1="450" x2="250" y2="460" stroke="black"></line>
+        <line x1="300" y1="450" x2="300" y2="460" stroke="black"></line>
+        <line x1="350" y1="450" x2="350" y2="460" stroke="black"></line>
+        <line x1="400" y1="450" x2="400" y2="460" stroke="black"></line>
+        <line x1="450" y1="450" x2="450" y2="460" stroke="black"></line>
+        <line x1="50" y1="450" x2="40" y2="450" stroke="black"></line>
+        <line x1="50" y1="400" x2="40" y2="400" stroke="black"></line>
+        <line x1="50" y1="350" x2="40" y2="350" stroke="black"></line>
+        <line x1="50" y1="300" x2="40" y2="300" stroke="black"></line>
+        <line x1="50" y1="250" x2="40" y2="250" stroke="black"></line>
+        <line x1="50" y1="200" x2="40" y2="200" stroke="black"></line>
+        <line x1="50" y1="150" x2="40" y2="150" stroke="black"></line>
+        <line x1="50" y1="100" x2="40" y2="100" stroke="black"></line>
+        <line x1="50" y1="50" x2="40" y2="50" stroke="black"></line>
+        <text x="50" y="470" font-size="10">0</text>
+        <text x="100" y="470" font-size="10">100</text>
+        <text x="150" y="470" font-size="10">200</text>
+        <text x="200" y="470" font-size="10">300</text>
+        <text x="250" y="470" font-size="10">400</text>
+        <text x="300" y="470" font-size="10">500</text>
+        <text x="350" y="470" font-size="10">600</text>
+        <text x="400" y="470" font-size="10">700</text>
+        <text x="450" y="470" font-size="10">800</text>
+        <text x="30" y="450" font-size="10">0</text>
+        <text x="30" y="400" font-size="10">100</text>
+        <text x="30" y="350" font-size="10">200</text>
+        <text x="30" y="300" font-size="10">300</text>
+        <text x="30" y="250" font-size="10">400</text>
+        <text x="30" y="200" font-size="10">500</text>
+        <text x="30" y="150" font-size="10">600</text>
+        <text x="30" y="100" font-size="10">700</text>
+        <text x="30" y="50" font-size="10">800</text>
+        <text x="250" y="490" font-size="15" text-anchor="middle">SATM</text>
+        <text x="20" y="250" font-size="15" text-anchor="middle" transform="rotate(-90, 20, 250)">SATV</text>
+      </svg>
+    </div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id = "question1">
+      <p> 
+        <b> Question 1</b>
+        <br>
+        To map the data space in the first plot, I used the following mapping:
+        <br>
+        For the SATM on the x axis, I divided the range of SATM scores by the (svg width - 50) because I have kept a padding of 50 from the left to accomadate my axis, tick marks.
+        And then I mutiplied all the values in the dataset with the value I recieved from dividing the SATM by (svg width-50). 
+        I was able to fit everything in the svg.
+        <br>
+        For the SATV on the y axis, I divided the all the scores by 2 and then I subtracted the resulting value from 450 because I have taken a padding of 50 from the bottom of the svg and took the absolute value of the resulting value to plot.
+        I decided to subtract from 450 because the axis of the svg starts from the top left corner and the maximum value of SATV is 450.
+        Doing so I was able to fit everything in the svg. 
+        <br>
+        I think my visualization makes it clear what the mapping is because I can see the SATM scores plotted on the x axis and the SATV scores plotted on the y axis.And I can easily see the relationship between the two variables.
+      </p>
+    </div>
+    <div id = "question2">
+      <p>
+        <b> Question 2</b>
+        <br>
+        <p>
+          I don't think the combination of circle radius with the color of the circle is a good way to represent the data.
+          <br>
+          I think because of this combination, it is difficult to see the relationship between the variables and also to find indiviudal data points because of the overlapping of the circles.
+          It becomes really difficult to spot data points when the circle radius is small and also all the points are circle so it is difficult to a particular data point od different gpa and try to derive some relationship between the variables.
+          <br>
+          If we could group the gpa values into groups and use different shapes for each to represent the data and use the same color to represent the same group of gpa values, I think it would help us better to see the relationship between the variables.
+          <br>
+        </p>
+      </p>
+    </div>
+    <div id = "question3">
+      <b> Question 3</b>
+      <br>
+      <p>
+        To overcome the problem of overplotting we can reduce the circle size and include transperancy in the circles, this will allow us to see the data points that are overlapping.
+        <br>
+        Jittering the data points is also a good way to overcome the problem of overplotting. We can also reduce the size of data that we are plotting or increase the size of the canvas.
+        <br>
+        This will allow us to plot the data points better and we can see the relationship between the variables better.
+        Another way to overcome the problem of overplotting is to use different shapes to represent the data points. This will allow us to see the data points better and also to see the relationship between the variables.
+        <br>
+        We can even use 3D plot to overcome because adding a third parameter will allow us to maybe kind of space out the data points and see them more clearly.
+        <br>
+      </p>
+    </div>
+
+  </body>
+  <script src="plot2.js"></script>
+  <script src = "plot3.js"></script>
+
+</html>

@@ -1,0 +1,26 @@
+/*
+Author : Deep Ruparel
+Date : 03/27/2023
+File : a04.css This file contains the css for the tool-tip.
+*/
+
+*/
+
+.tip-label {
+	font-weight: bold;
+}
+
+/* The container responsible for showing the rectangle's info that the user clicked */
+div#tool-tip {
+	position:      absolute;
+	height:         auto;
+	font:           15px sans-serif;
+	padding:        2px;
+	text-align:     left;
+	pointer-events: none;
+	opacity:        0;
+	border:         0;
+	border-radius:  4px;
+	background:     #fe8e8e;
+	
+}

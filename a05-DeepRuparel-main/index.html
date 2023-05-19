@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="vtk.js"></script>
+    <script src="d3.js"></script>
+    <script src="volren.js"></script>
+  </head>
+  <body>
+    <div>
+      <input type="file" id="loadData">
+      <button id="sequential">Sequential</button>
+	  
+	  <button id="diverging">Diverging</button>
+	  
+	  <button id="categorical">Categorical</button>
+    </div> 
+
+    <div>
+      <div id="volren"></div>
+      <div id="tfunc"></div>
+    </div>
+    <script type="text/javascript" src="a05.js"></script>
+    <div>
+      Question 1
+      <p>
+        Choropleth is when areas in a map are shaded, colored or patterned relative to a data attribute value.
+        They are effective when the goal is to show geographic distribution of a particular variable. One possible setting where one might use choropleth over cartogram is if we wanted to visualize the percentage of population speaking Spanish in each state of the United States, a choropleth map can be used to show this distribution across the country.
+        Cartogram is when areas in a map are scaled and distorted relative to a data attribute value. It allows to easily see the magnitude or relative size of an attribute very easily. One would use a cartogram when visualizing the deaths cause by COVID-19 in each country in the world. It easily allows us to see the relative magnitude of the variable across different countries.
+      </p>
+    </div>
+    <div>
+      Question 2
+      <p>
+        The cause for the ambiguity in matching squares algorithm is in the case when vertices of a diagonal are of same sign whereas the vertices of the other diagonal are of the opposite sign. That means, vertices of one diagonal are positive and the vertices of the other diagonal are negative. This cause ambiguity which case to select, causing a confusion between case 5 and case 10 in the case table (lookup table) used to implement the algorithm. 
+        One of the ways to overcome this ambiguity would be to use the numerical values associated with the vertex, in the ambiguous cases the top left and bottom right have positive and bottom left and top right are are negative or vice versa. In such cases we can compute a value and depending on the value if it is positive we can select one case and if it negative we select the other. 
+      </p>
+    </div>
+    <div>
+      Question 3
+      <p>
+        The utility of the sequential transfer function is that it provides a way to map scalar values to color and opacity values. By adjusting the sequential transfer function, it allows to 
+        highlight or de-emphasize certain features in the data. It can be used to enhance the visibility of fine details in the data. 
+        Diverging transfer function emphasizes the differences between two regions of data by assigning different colors and opacity values to each region.
+        It can be used to highlight critical values in the data, such as the peak value. Diverging transfer functions provide better perceptual discrimination of small changes making the subtle differences in the data more visible.
+        Categorical transfer functions helps to improve the visual clarity of the rendered volume by assigning distinct colors to different regions of the volume.
+        This can make it easier to differentiate between different structures in the volume and improve overall visual perception.
+        All of them are effective because they all help to highlight the different features of the data and help in better understanding of the data.
+      </p>
+    </div>
+  </body>
+</html>

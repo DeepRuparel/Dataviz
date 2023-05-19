@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="d3.js"></script>
+    <script src="flare.js"></script>
+    <script src="test-cases.js"></script>
+    <link rel="stylesheet" href="a04.css"/>
+  </head>
+  <body style="padding: 0; margin: 0">
+    <svg id="svg"></svg>
+    <div style="position: absolute; right: 1em; top: 1em">
+      <button id="size">Size</button>
+      <button id="count">Count</button>
+      <button id="best-size">Best Size</button>
+      <button id="best-count">Best Count</button>
+      <button id="squarified-count">Squarified Count</button>
+      <button id="squarified-size">Squarified Size</button>
+    </div>
+    
+    <div id="tool-tip">
+      <div id="table" style="float: left">
+        <table>
+          <tr>
+            <td class="tip-label">&nbsp;&nbsp;&nbsp;Title: </td>
+            <td class="tip-value" id="tip-title"></td>
+          </tr>
+          <tr>
+            <td class="tip-label">Depth: </td>
+            <td class="tip-value" id="tip-depth"></td>
+          </tr>
+          <tr>
+            <td class="tip-label">&nbsp;&nbsp;&nbsp;Size: </td>
+            <td class="tip-value" id="tip-size"></td>
+          </tr>
+          <tr class="tip-optional">
+            <td class="tip-label">Count: </td>
+            <td class="tip-value" id="tip-count"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    <svg id="legend"></svg>
+    <script src="a04.js"></script>
+    <div id = "answers">
+      <p> Sequential and diverging color maps are used to represent the data through colors. The difference between them is that 
+        a sequential color map is a color map scheme in which the range of colors gradually increase or decrease in either brightness or intensity.
+        It allows representing a gradual change in data values. On the other hand in a diverging color map uses two color which are contrasting colors
+        to represent the two opposite ends of the data for example maximum and minimum and a neutral color in the middle for a middle value.
+        For the data visualized in this assignment, I would use a sequential color map because the tree map uses the depth of the node to represent the color. Since the depth of node is in increasing, I believe a sequential color map would be more appropriate when compared 
+        to a diverging color map.
+
+      </p>
+      </br>
+      <p>
+        Geometric zooming is a traditional or the most commonly used zooming. We zoom in and out by scaling the size of entire the visual content. 
+        In geometric zooming, the elements are scaled up or down in size, maintaining their relative positions, but often resulting in a loss of detail when zooming too far in or out. 
+        Semantic zooming is a more sophisticated way of zooming, it involves zooming in and out to reveal more or less information based on its semantic meaning. This is particularly useful when working with hierarchical data, 
+        where zooming in would provide more information about it, whereas zooming out provide a broader overview of data. 
+      </p>
+    </br>
+    <p>
+      A situation where one would see tree maps over node-link diagram is when the data has a lot of nodes and has a very deep hierarchy with many edges between nodes.
+      Since tree maps fill the space on the screen, enabling us to fit numerous nodes in a compact as well as hierarchical structure by the means of drawing rectangles for each node.
+      The size and the color are used to encode additional information, such as its value or position. Using node-links, the edges and nodes would overlap too much, causing the diagram to be very cluttered. 
+      This will not allow us to easily draw conclusions or find patterns from the diagram.
+      A situation where one would prefer node-link diagrams is when we have a data which consists of crossing or cyclic relationships. In this case, representing the data in tree maps could be difficult but
+      node-link would be preferred because it allows the use of curved lines to show relationships between nodes. This could be useful when visualizing friends/followers on social network websites because they usually have cyclic relationships rather than hierarchical.
+    </p>
+
+
+    </div>
+  </body>
+</html>
+  

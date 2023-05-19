@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="vtk.js"></script>
+    <script src="d3.js"></script>
+    <script src="flowvis.js"></script>
+  </head>
+  <body>
+    <div id = "div1">
+      <input type="file" id="loadData">
+       
+       <select id="sampling">
+         <option value="uniform" selected>Uniform</option>
+         <option value="random">Random</option>
+        </select>
+        <select id = "flow">
+          <option value="glyph" selected> Glyph</option>
+          <option value="streamline">Streamlines</option>
+          
+        </select>
+    </div> 
+    <div id = "div2"></div>
+
+    <div id="vfplot"></div>
+
+    <script type="text/javascript" src="a06.js"></script>
+    <div>
+      <p>
+        Question 1
+        In my assignment, the glyph which are triangular encode color which is the magnitude of the velocity vector, this helps to visualize the magnitude much easily because sometimes the glyphs can be tiny making it difficult to get an idea of the magnitude, color coding it provides allowing for a more precise and nuanced understanding of the flow field. The size of these glyphs also encode the magnitude of the velocity vector because it makes it very easy to differentiate between vectors of different flow and compare the regions of high flow with low flow.
+        The glyphs are directed in the direction of the velocity vector as it creates a visual representation of the flow field that is easy to interpret and understand.
+      </p>
+      <p>
+        Question 2
+        In the context of 2D data, saddle points represent a point, where the gradient of the data changes direction, and this change is reflected in the change in orientation of the isocontours on both sides of the saddle points. 
+        The topological changes that occur at these points are that before the saddle point, the isocontours might be evenly spaced and never touch each other, but at saddle points, the contour lines will come together and might intersect, forming the minimum and maximum values. 
+        It will also change the orientation of the isocontours, they change from being aligned with the axes on one side of the saddle point, to being aligned with the diagonal on the other side of the saddle point. 
+        This allows us to understand the behavior of data in different directions.
+      </p>
+      <p>
+        Question 3
+        Texture-based techniques can make it difficult to determine precise numerical values of the flow field at specific points. It can also make it difficult to understand the depth of the flow field and the direction of its flow, meaning if the flow is going inwards or outwards. They are also dependent on color schemes to convey information, so choosing a color scale that is also suitable for colorblind people is a great challenge.
+        A strength of the texture-based approach to visualizing flow is that it makes it very easy to understand the flow speed, as well as patterns of turbulence and voracity. It also allows us to easily visualize the temporal evolution of the flow field, such as changes in velocity over time. They also provide an intuitive representation of the flow field that is easy to understand and interpret.
+        </p>
+      
+    
+    </div>
+  </body>
+</html>
